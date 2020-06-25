@@ -21,6 +21,22 @@
 - server 제작 후 http://<machine name>:<port number>/<html file name>을 입력하여 정상 작동하는지 확인한다.
 - 이 후 GIF, JPEG, MP3, PDF를 인식할 수 있도록 확장한다.
   
-## 프로젝트 실행
+## 프로젝트 실행 및 디자인에 대한 도식
 - makefile 실행
-  - ![makefile](https://user-images.githubusercontent.com/22045179/85653462-0b82a280-b6e8-11ea-880a-221d15c11b03.png)
+![makefile](https://user-images.githubusercontent.com/22045179/85653462-0b82a280-b6e8-11ea-880a-221d15c11b03.png)
+
+- 클라이언트로부터 요청받은 파일을 GET or POST /파일명.확장자 형식으로 newbuf에 저장
+![1](https://user-images.githubusercontent.com/22045179/85653469-0cb3cf80-b6e8-11ea-8795-3e18271c66e8.png)
+
+- GET인지 POST인지 판별한후 /파일명.확장자 부분만 newpath에 저장함.
+![2](https://user-images.githubusercontent.com/22045179/85653481-11788380-b6e8-11ea-82af-98291a9cb0cd.png)
+
+- newpath에서 맨앞의 /부분을 떼어내고 뒷부분을 newfile에 저장.
+- newfile에서 파일의 확장자 부분만(‘.’ 이후 부분) fileExtension에 저장.
+![3](https://user-images.githubusercontent.com/22045179/85653489-13dadd80-b6e8-11ea-9e40-e4c368fc9d21.png)
+
+- 각각의 파일의 확장자에 따른 Content-Type 출력값을 설정(html, gif, jpg, pdf, mp3 ...)
+![4](https://user-images.githubusercontent.com/22045179/85653497-163d3780-b6e8-11ea-8219-7250b6c703f5.png)
+
+- header를 생성하고 header와 파일을 붙여 클라이언트(브라우저)에 전달함.
+![5](https://user-images.githubusercontent.com/22045179/85653511-1a695500-b6e8-11ea-9a47-1bae2653aac0.png)
