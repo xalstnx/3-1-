@@ -23,3 +23,4 @@
   
 ## 프로젝트 실행
 - makefile 실행
+  - ![makefile](https://user-images.githubusercontent.com/22045179/85653462-0b82a280-b6e8-11ea-880a-221d15c11b03.png)
