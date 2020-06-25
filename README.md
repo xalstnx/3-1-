@@ -23,6 +23,7 @@
   
 ## 프로젝트 실행 및 디자인에 대한 도식
 - makefile 실행
+
 ![makefile](https://user-images.githubusercontent.com/22045179/85653462-0b82a280-b6e8-11ea-880a-221d15c11b03.png)
 
 - 클라이언트로부터 요청받은 파일을 GET or POST /파일명.확장자 형식으로 newbuf에 저장
@@ -43,4 +44,5 @@
 
 ## 동작예시
 - .html 파일
+
 ![6](https://user-images.githubusercontent.com/22045179/85653522-1ccbaf00-b6e8-11ea-8a97-4c9872506e92.png)
