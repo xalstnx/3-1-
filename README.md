@@ -44,5 +44,6 @@
 
 ## 동작예시
 - .html 파일
-
+  - 서버에는 GET한 파일, HOST의 IP주소와 포트, User-Agent와 요청에 대한 응답으로 허용되는 미디어 범위 목록인 Accept가 출력되고 클라이언트(브라우저)가 요청하는 파일을 보여줌
+클라이언트는 서버로부터 요청한 파일에 대한 header와 파일명, 파일내용을 순서대로 보여줌
 ![6](https://user-images.githubusercontent.com/22045179/85653522-1ccbaf00-b6e8-11ea-8a97-4c9872506e92.png)
