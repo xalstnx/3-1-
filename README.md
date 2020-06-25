@@ -22,4 +22,4 @@
 - 이 후 GIF, JPEG, MP3, PDF를 인식할 수 있도록 확장한다.
   
 ## 프로젝트 실행
-###makefile 실행
+- makefile 실행
