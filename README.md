@@ -40,3 +40,7 @@
 
 - header를 생성하고 header와 파일을 붙여 클라이언트(브라우저)에 전달함.
 ![5](https://user-images.githubusercontent.com/22045179/85653511-1a695500-b6e8-11ea-9a47-1bae2653aac0.png)
+
+## 동작예시
+- .html 파일
+![6](https://user-images.githubusercontent.com/22045179/85653522-1ccbaf00-b6e8-11ea-8a97-4c9872506e92.png)
